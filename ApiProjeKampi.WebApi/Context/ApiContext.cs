@@ -19,5 +19,6 @@ namespace ApiProjeKampi.WebApi.Context
         public DbSet<Message> Messages { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }
