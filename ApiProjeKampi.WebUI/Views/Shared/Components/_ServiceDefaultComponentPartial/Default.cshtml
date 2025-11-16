@@ -1,4 +1,6 @@
-﻿<section id="why-us" class="why-us section light-background">
+﻿@model List<ApiProjeKampi.WebUI.Dtos.ServiceDtos.ResultServiceDto>
+
+<section id="why-us" class="why-us section light-background">
 
     <div class="container">
 
@@ -19,7 +21,20 @@
             <div class="col-lg-8 d-flex align-items-stretch">
                 <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-xl-4">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-xl-4">
+                            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                <i class="@item.IconUrl"></i>
+                                <h4>@item.Title</h4>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    
+                        <!-- End Icon Box -->
+                    }
+
+@*                     <div class="col-xl-4">
                         <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                             <i class="bi bi-clipboard-data"></i>
                             <h4>Lezzetin kalbinde buluşuyoruz</h4>
@@ -41,7 +56,7 @@
                             <h4>Sıcak servis, samimi ortam</h4>
                             <p>Konforlu ortamımızda yemeklerinizi keyifle yiyin, kendinizi evinizde hissedin.</p>
                         </div>
-                    </div><!-- End Icon Box -->
+                    </div><!-- End Icon Box --> *@
 
                 </div>
             </div>
