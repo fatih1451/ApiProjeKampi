@@ -1,0 +1,72 @@
+﻿[
+  {
+    "testimonialId": 1,
+    "nameSurname": "Ahmet Yılmaz",
+    "title": "Gurme / Yemek Bloggerı",
+    "comment": "Sunumlar harikaydı, özellikle etlerin pişirme ayarı kusursuzdu. Tekrar geleceğim.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 2,
+    "nameSurname": "Elif Demir",
+    "title": "Diyetisyen",
+    "comment": "Hem sağlıklı hem de lezzetli seçenekler sunmaları beni çok memnun etti.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 3,
+    "nameSurname": "Burak Karahan",
+    "title": "Şirket Müdürü",
+    "comment": "İş yemekleri için ideal bir ortam. Hizmet kalitesi gerçekten üst düzey.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 4,
+    "nameSurname": "Merve Aksoy",
+    "title": "Öğretmen",
+    "comment": "Aile ile gidilebilecek sakin ve kaliteli bir restoran. Fiyat/performans oldukça iyi.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 5,
+    "nameSurname": "Cem Arslan",
+    "title": "Fotoğrafçı",
+    "comment": "Mekan ambiyansı çok hoş. Yemekler kadar ortamın da keyfini çıkardım.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 6,
+    "nameSurname": "Selin Öztürk",
+    "title": "Pazarlama Uzmanı",
+    "comment": "Garsonlar güler yüzlüydü, siparişler hızlı geldi. Tatlılar muhteşem!",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 7,
+    "nameSurname": "Hakan Uslu",
+    "title": "Mühendis",
+    "comment": "Fiyatlar makul, porsiyonlar doyurucu. Özellikle ana yemekleri tavsiye ederim.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 8,
+    "nameSurname": "Ayşe Koç",
+    "title": "Avukat",
+    "comment": "Rezervasyonumuz sorunsuzdu. Masalar temiz ve düzenliydi. Çok memnun kaldık.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 9,
+    "nameSurname": "Emre Korkmaz",
+    "title": "Yazılım Geliştirici",
+    "comment": "Sessiz, nezih bir ortam. Çalışırken bile kahve içmek için ideal bir yer.",
+    "imageUrl": "test"
+  },
+  {
+    "testimonialId": 10,
+    "nameSurname": "Zeynep Şahin",
+    "title": "Mimar",
+    "comment": "Dekorasyon çok şık, yemeklerle birlikte bütün deneyim mükemmeldi.",
+    "imageUrl": "test"
+  }
+]
