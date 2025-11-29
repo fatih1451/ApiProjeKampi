@@ -1,0 +1,40 @@
+﻿[
+  {
+    "title": "Doğum Günü Organizasyonu",
+    "description": "Özel süslemeler, kişiye özel pasta ve geniş menü seçenekleriyle keyifli bir doğum günü kutlaması.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 3500
+  },
+  {
+    "title": "Kurumsal Toplantı Yemeği",
+    "description": "Sessiz ve profesyonel ortam, sunum imkanı, özel menüler ve kalabalık gruplara uygun masa düzeni.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 5000
+  },
+  {
+    "title": "Nişan & Söz Kutlaması",
+    "description": "Şık masa düzeni, fotoğraf köşesi, davetli karşılaması ve özel ikram seçenekleriyle romantik bir kutlama.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 8000
+  },
+  {
+    "title": "Arkadaş Buluşması",
+    "description": "Samimi bir ortam, grup menüleri, atıştırmalık seçenekleri ve rahat oturma düzeni.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 1500
+  },
+  {
+    "title": "Aile Yemek Organizasyonu",
+    "description": "Kalabalık aileler için geniş masalar, çocuklara uygun menüler ve sıcak bir atmosfer.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 2500
+  }
+]
+
+
+/yummy-red-1.0.0/assets/img/events-1.jpg

@@ -1,0 +1,20 @@
+﻿[
+  {
+    "nameSurname": "Mehmet Kaya",
+    "title": "Baş Aşçı",
+    "imageUrl": "test",
+    "description": "20 yıllık mutfak tecrübesiyle Türk ve dünya mutfağını harmanlayan usta şef. Menülerin oluşturulması ve mutfak ekibinin yönetiminden sorumludur."
+  },
+  {
+    "nameSurname": "Elif Demir",
+    "title": "Pastane Şefi",
+    "imageUrl": "test",
+    "description": "Tatlı ve hamur işlerinde uzman olan Elif Şef, günlük taze pastalar, özel gün tatlıları ve restoranın imza tatlılarını hazırlamaktadır."
+  },
+  {
+    "nameSurname": "Ahmet Yıldız",
+    "title": "Izgara ve Et Şefi",
+    "imageUrl": "test",
+    "description": "Et pişirme teknikleri konusunda uzmanlaşmış olan Ahmet Şef, restoranın tüm ızgara ve et ürünlerinin hazırlanmasından sorumludur."
+  }
+]
