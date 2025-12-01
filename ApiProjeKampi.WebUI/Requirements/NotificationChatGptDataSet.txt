@@ -1,0 +1,32 @@
+﻿[
+  {
+    "description": "Bugün tüm menülerde %20 indirim fırsatını kaçırmayın!",
+    "iconUrl": "promo_icon.png",
+    "notificationDate": "2025-12-01T10:15:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Rezervasyonunuz onaylandı. Sizi ağırlamak için sabırsızlanıyoruz.",
+    "iconUrl": "reservation_confirm.png",
+    "notificationDate": "2025-12-01T12:45:30.000Z",
+    "isRead": true
+  },
+  {
+    "description": "Restoranımızda canlı müzik etkinliği bu akşam saat 20:00’de başlıyor!",
+    "iconUrl": "music_event.png",
+    "notificationDate": "2025-12-01T09:30:10.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Siparişiniz hazırlandı ve teslim edilmek üzere yola çıktı.",
+    "iconUrl": "delivery.png",
+    "notificationDate": "2025-12-01T14:20:00.000Z",
+    "isRead": true
+  },
+  {
+    "description": "Bugünün şefi özel menümüzü denediniz mi? Sınırlı süre için servisimizde!",
+    "iconUrl": "chef_special.png",
+    "notificationDate": "2025-12-01T16:00:00.000Z",
+    "isRead": false
+  }
+]
