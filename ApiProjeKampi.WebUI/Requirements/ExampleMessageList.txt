@@ -1,0 +1,73 @@
+﻿[
+  {
+    "email": "ahmet.kaya@example.com",
+    "subject": "Rezervasyon Talebi",
+    "content": "Bu akşam için 4 kişilik masa ayırtmak istiyorum. Müsaitlik durumu nedir?",
+    "sentDate": "2025-12-01T10:05:12.000Z",
+    "isRead": true
+  },
+  {
+    "email": "melis.yildiz@example.com",
+    "subject": "Doğum Günü Organizasyonu",
+    "content": "Kızım için 10 kişilik doğum günü organizasyonu düzenlemek istiyorum. Paketleriniz hakkında bilgi alabilir miyim?",
+    "sentDate": "2025-12-01T10:12:44.000Z",
+    "isRead": true
+  },
+  {
+    "email": "burak.ersoy@example.com",
+    "subject": "Glutensiz Menü Sorgusu",
+    "content": "Glutensiz yemek seçenekleriniz var mı? Varsa detaylarını paylaşabilir misiniz?",
+    "sentDate": "2025-12-01T10:18:30.000Z",
+    "isRead": true
+  },
+  {
+    "email": "selin.dogan@example.com",
+    "subject": "Vale Hizmeti",
+    "content": "Restoranınızda vale hizmeti mevcut mu? Cumartesi günü geleceğiz.",
+    "sentDate": "2025-12-01T10:24:59.000Z",
+    "isRead": true
+  },
+  {
+    "email": "mehmet.aslan@example.com",
+    "subject": "Kurumsal Toplantı Yemeği",
+    "content": "20 kişilik bir iş toplantısı için özel menü ve salon ayrımı hakkında bilgi rica ederim.",
+    "sentDate": "2025-12-01T10:35:22.000Z",
+    "isRead": true
+  },
+  {
+    "email": "aylin.kurt@example.com",
+    "subject": "Sipariş Hakkında Soru",
+    "content": "Online verdiğim siparişte bir gecikme oldu. Son durumu öğrenebilir miyim?",
+    "sentDate": "2025-12-01T10:41:03.000Z",
+    "isRead": true
+  },
+
+  {
+    "email": "ozgur.aksoy@example.com",
+    "subject": "Canlı Müzik Var mı?",
+    "content": "Cuma akşamları canlı müzik oluyor mu? Rezervasyon yaptırmak istiyorum.",
+    "sentDate": "2025-12-01T10:48:11.000Z",
+    "isRead": false
+  },
+  {
+    "email": "elif.karaman@example.com",
+    "subject": "Engelli Girişi Hakkında",
+    "content": "Restoranınızda engelli girişine uygun alan var mı? Annem tekerlekli sandalye kullanıyor.",
+    "sentDate": "2025-12-01T10:53:48.000Z",
+    "isRead": false
+  },
+  {
+    "email": "baran.cetin@example.com",
+    "subject": "Alerjen Bilgisi",
+    "content": "Fındık alerjim var. Menüde fındık içeren ürünler hangileri?",
+    "sentDate": "2025-12-01T11:01:12.000Z",
+    "isRead": false
+  },
+  {
+    "email": "irem.kaplan@example.com",
+    "subject": "Otopark Durumu",
+    "content": "Pazar günü geleceğiz, otopark kapasitesi yeterli midir?",
+    "sentDate": "2025-12-01T11:08:37.000Z",
+    "isRead": false
+  }
+]

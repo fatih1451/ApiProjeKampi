@@ -2,7 +2,6 @@
 using ApiProjeKampi.WebApi.Dtos.MessageDtos;
 using ApiProjeKampi.WebApi.Entities;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiProjeKampi.WebApi.Controllers
@@ -37,7 +36,7 @@ namespace ApiProjeKampi.WebApi.Controllers
         }
 
         [HttpDelete]
-        public IActionResult DeleteMessage(int id) 
+        public IActionResult DeleteMessage(int id)
         {
             var value = _context.Messages.Find(id);
             _context.Messages.Remove(value);
@@ -46,9 +45,9 @@ namespace ApiProjeKampi.WebApi.Controllers
         }
 
         [HttpGet("GetMessage")]
-        public IActionResult GetMessages(int id) 
+        public IActionResult GetMessages(int id)
         {
-            var value  =_context.Messages.Find(id);
+            var value = _context.Messages.Find(id);
             return Ok(_mapper.Map<GetByIdMessageDto>(value));
         }
 
@@ -61,5 +60,11 @@ namespace ApiProjeKampi.WebApi.Controllers
             return Ok("Güncelleme işlemi başarılı");
         }
 
+        [HttpGet("MessageListIsReadFalse")]
+        public IActionResult MessageListIsReadFalse()
+        {
+            var values = _context.Messages.Where(x => x.IsRead == false).ToList();
+            return Ok(values);
+        }
     }
 }
