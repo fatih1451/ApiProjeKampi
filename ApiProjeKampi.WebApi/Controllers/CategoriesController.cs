@@ -1,5 +1,8 @@
 ﻿using ApiProjeKampi.WebApi.Context;
+using ApiProjeKampi.WebApi.Dtos.CategoryDtos;
+using ApiProjeKampi.WebApi.Dtos.FeatureDtos;
 using ApiProjeKampi.WebApi.Entities;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiProjeKampi.WebApi.Controllers
@@ -9,9 +12,11 @@ namespace ApiProjeKampi.WebApi.Controllers
     public class CategoriesController : ControllerBase
     {
         private readonly ApiContext _context;
-        public CategoriesController(ApiContext apiContext)
+        private readonly IMapper _mapper;
+        public CategoriesController(ApiContext apiContext, IMapper mapper)
         {
             _context = apiContext;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -22,9 +27,10 @@ namespace ApiProjeKampi.WebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateCategory(Category category)
+        public IActionResult CreateCategory(CreateCategoryDto createCategoryDto)
         {
-            _context.Categories.Add(category);
+            var value = _mapper.Map<Category>(createCategoryDto);
+            _context.Categories.Add(value);
             _context.SaveChanges();
             return Ok("Kategori ekleme işlemi başarılı!");
         }
