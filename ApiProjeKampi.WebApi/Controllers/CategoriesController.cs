@@ -60,18 +60,11 @@ namespace ApiProjeKampi.WebApi.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateCategory(Category category)
+        public IActionResult UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
-            //var existingCategory = _context.Categories.Find(category.CategoryId);
-            //if (existingCategory == null)
-            //{
-            //    return NotFound("Kategori bulunamadı.");
-            //}
-            //existingCategory.CategoryName = category.CategoryName;
-            //_context.SaveChanges();
-            //return Ok("Kategori güncelleme işlemi başarılı!");
-
-            _context.Categories.Update(category);
+            var value = _mapper.Map<Category>(updateCategoryDto);
+           
+            _context.Categories.Update(value);
             _context.SaveChanges();
             return Ok("Kategori güncelleme işlemi başarılı!");
         }

@@ -2,6 +2,7 @@
 using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace ApiProjeKampi.WebUI.Controllers
 {
@@ -40,7 +41,7 @@ namespace ApiProjeKampi.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createCategoryDto);
 
-            StringContent content = new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json");
+            StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
             var responseMessage = await client.PostAsync("https://localhost:7124/api/Categories", content);
 
@@ -69,6 +70,17 @@ namespace ApiProjeKampi.WebUI.Controllers
 
             var value = JsonConvert.DeserializeObject<GetCategoryByIdDto>(jsonData);
             return View(value);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(updateCategoryDto);
+
+            StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            await client.PutAsync("https://localhost:7124/api/Categories", content);
+            return RedirectToAction("CategoryList");
         }
     }
 }
