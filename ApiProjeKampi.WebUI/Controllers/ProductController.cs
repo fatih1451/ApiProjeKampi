@@ -1,6 +1,9 @@
 ﻿using System.Text;
+using System.Threading.Tasks;
+using ApiProjeKampi.WebUI.Dtos.CategoryDtos;
 using ApiProjeKampi.WebUI.Dtos.ProductDtos;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 
 namespace ApiProjeKampi.WebUI.Controllers
@@ -17,7 +20,7 @@ namespace ApiProjeKampi.WebUI.Controllers
         public async Task<IActionResult> ProductList()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7124/api/Products");
+            var responseMessage = await client.GetAsync("https://localhost:7124/api/Products/ProducListWithCategory");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -29,8 +32,22 @@ namespace ApiProjeKampi.WebUI.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateProduct()
+        public async Task<IActionResult> CreateProduct()
         {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:7124/api/Categories");
+
+            var jsonData = await responseMessage.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
+            List<SelectListItem> categoryValues = (from x in values
+                                            select new SelectListItem
+                                            {
+                                                Text = x.CategoryName,
+                                                Value = x.CategoryId.ToString()
+                                            }).ToList();
+
+            ViewBag.categoryValues = categoryValues;
+
             return View();
         }
 
@@ -42,7 +59,7 @@ namespace ApiProjeKampi.WebUI.Controllers
 
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
-            var responseMessage = await client.PostAsync("https://localhost:7124/api/Products", content);
+            var responseMessage = await client.PostAsync("https://localhost:7124/api/Products/CreateProductWithCategory", content);
 
             if (responseMessage.IsSuccessStatusCode)
             {

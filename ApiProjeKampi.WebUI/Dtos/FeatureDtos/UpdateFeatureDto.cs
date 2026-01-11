@@ -1,6 +1,6 @@
-﻿namespace ApiProjeKampi.WebApi.Entities
+﻿namespace ApiProjeKampi.WebUI.Dtos.FeatureDtos
 {
-    public class Feature
+    public class UpdateFeatureDto
     {
         public int FeatureId { get; set; }
         public string Title { get; set; }
