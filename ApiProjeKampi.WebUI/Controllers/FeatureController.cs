@@ -67,7 +67,7 @@ namespace ApiProjeKampi.WebUI.Controllers
             var responseMessage = await client.GetAsync("https://localhost:7124/api/Features/GetFeature?id=" + id);
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
 
-            var value = JsonConvert.DeserializeObject<GetFeatureByIdDto>(jsonData);
+            var value = JsonConvert.DeserializeObject<UpdateFeatureDto>(jsonData);
             return View(value);
         }
 
