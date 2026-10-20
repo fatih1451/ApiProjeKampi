@@ -22,5 +22,6 @@ namespace ApiProjeKampi.WebApi.Context
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<YummyEvent> YummyEvents { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<About> Abouts { get; set; }
     }
 }
