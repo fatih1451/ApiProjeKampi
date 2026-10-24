@@ -23,7 +23,7 @@ namespace ApiProjeKampi.WebApi.Controllers
         public IActionResult Get()
         {
             var value = _context.Messages.ToList();
-            return Ok(_mapper.Map<ResultMessageDto>(value));
+            return Ok(_mapper.Map<List<ResultMessageDto>>(value));
         }
 
         [HttpPost]
