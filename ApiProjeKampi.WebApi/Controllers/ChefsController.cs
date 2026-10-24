@@ -59,20 +59,9 @@ namespace ApiProjeKampi.WebApi.Controllers
         [HttpPut]
         public IActionResult UpdateChef(Chef chef)
         {
-            //var existingChef = _context.Chefs.Find(chef.ChefId);
-            //if (existingChef == null)
-            //{
-            //    return NotFound("Şef bulunamadı.");
-            //}
-            //existingChef.Name = chef.Name;
-            //existingChef.Specialty = chef.Specialty;
-            // Diğer alanları da güncelleyin
-
-
             _context.Chefs.Update(chef);
             _context.SaveChanges();
             return Ok("Şef güncelleme işlemi başarılı!");
         }
     }
-
 }
